@@ -1,0 +1,393 @@
+.purple {
+  color: #9562ff;
+}
+
+.blue {
+  color: #52b2f2;
+}
+
+.cyan {
+  color: #00c3ff;
+}
+
+.green {
+  color: #00c583;
+}
+
+.yellow {
+  color: #ffc100;
+}
+
+.red {
+  color: #ea3160;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Google Sans, sans-serif;
+}
+
+body {
+  background-color: #181818;
+  color: #ffffff;
+  font-size: 2rem;
+  overflow-x: hidden;
+  font-family: GT Walsheim Pro;
+}
+
+h1 {
+  font-size: calc(10.8px + 5vw);
+  margin: 0;
+  font-weight: 700;
+}
+
+header {
+  background-color: #181818;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  z-index: 999;
+}
+
+header div {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.3rem 0;
+}
+
+header div .logo {
+  color: #fff;
+  font-size: 1rem;
+}
+
+header div a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #9d9d9d;
+  font-weight: 500;
+}
+
+header div i {
+  color: #ffffff;
+}
+
+header div a:hover {
+  color: white;
+}
+
+header div #signin {
+  color: #0099ff;
+}
+
+header div #signin:hover {
+  color: #0066dd;
+}
+
+header div #signup {
+  margin-left: 15px;
+  color: white;
+  padding: 10px 20px;
+  background-color: #0099ff;
+  border-radius: 20px;
+}
+
+.intro {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 60%;
+  margin: 20vh auto 10vh auto;
+  top: 3rem;
+}
+
+.intro p {
+  color: #bbbbbb;
+  margin: 0 0 4vh 0;
+}
+
+.intro a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.5vw;
+  background-color: #0099ff;
+  border-radius: 25px;
+}
+
+.intro i {
+  margin-left: 10px;
+}
+
+.intro a:hover {
+  background-color: #00aaff;
+}
+
+.Hero__image {
+  width: 98.8vw;
+  height: 47vw;
+  z-index: -1;
+  background: url(../Media/backdrop-app.png);
+  background-size: cover;
+  -webkit-transform: perspective(2rem) rotateX(2deg) translateY(-4rem);
+          transform: perspective(2rem) rotateX(2deg) translateY(-4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  -webkit-animation: fade 0.2s infinite;
+          animation: fade 0.2s infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+}
+
+.Hero__image #center-image {
+  width: 40vw;
+  height: 20vw;
+  border-radius: 30px;
+  -webkit-transform: perspective(2rem) translateZ(-1rem) translateY(calc(8rem + 4vw));
+          transform: perspective(2rem) translateZ(-1rem) translateY(calc(8rem + 4vw));
+  -webkit-animation: persp 0.3s linear;
+          animation: persp 0.3s linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+          animation-delay: calc(var(--scroll) * -1s);
+  z-index: -1;
+}
+
+@-webkit-keyframes persp {
+  20% {
+    width: 80vw;
+    height: 44vw;
+    -webkit-transform: perspective(2rem) rotateX(-1.8deg);
+            transform: perspective(2rem) rotateX(-1.8deg);
+  }
+  100% {
+    width: 80vw;
+    height: 44vw;
+    -webkit-transform: perspective(2rem) rotateX(-1.8deg);
+            transform: perspective(2rem) rotateX(-1.8deg);
+  }
+}
+
+@keyframes persp {
+  20% {
+    width: 80vw;
+    height: 44vw;
+    -webkit-transform: perspective(2rem) rotateX(-1.8deg);
+            transform: perspective(2rem) rotateX(-1.8deg);
+  }
+  100% {
+    width: 80vw;
+    height: 44vw;
+    -webkit-transform: perspective(2rem) rotateX(-1.8deg);
+            transform: perspective(2rem) rotateX(-1.8deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  to {
+    background: none;
+  }
+}
+
+@keyframes fade {
+  to {
+    background: none;
+  }
+}
+
+.functions {
+  margin-top: 20vh;
+}
+
+.functions h1 {
+  width: calc(9px + 50vw);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 100px 4vw 100px 16vw;
+}
+
+.grid .grid__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .grid__element p {
+  margin: 0;
+  font-size: calc(18px + 1vw);
+}
+
+.grid .grid__element i {
+  border-radius: 15px;
+  background: #2b2b2b;
+  background: linear-gradient(135deg, #2b2b2b 0%, #232323 100%);
+  width: 70px;
+  padding: 22px 0;
+  text-align: center;
+  margin: 0 2vw 0 0;
+}
+
+.interactive {
+  margin-top: 150px;
+}
+
+.interactive h1 {
+  width: calc(39px + 60vw);
+}
+
+.interactive a {
+  text-decoration: none;
+}
+
+.motion {
+  margin-top: 150px;
+}
+
+.motion h1 {
+  width: calc(39px + 40vw);
+}
+
+.insert {
+  margin-top: 150px;
+}
+
+.insert h1 {
+  width: calc(80px + 60vw);
+}
+
+.insert p {
+  width: 70%;
+}
+
+.insert .green {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.insert button {
+  font-size: 6vw;
+  padding: 1vw 3vw;
+  border-radius: 4vw;
+  font-family: GT Walsheim Pro;
+  background-color: #00c583;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10rem black;
+          box-shadow: 0 0 10rem black;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  font-weight: 700;
+}
+
+.insert button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.insert button:active ~ #pressed {
+  -webkit-animation: jump .3s linear;
+          animation: jump .3s linear;
+}
+
+.insert button:active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.insert #pressed {
+  display: inline-block;
+}
+
+.insert a {
+  text-decoration: none;
+}
+
+.insert #mark {
+  font-size: 5vw;
+  display: none;
+  float: right;
+  font-size: calc(18px + 1vw);
+  position: relative;
+  top: calc(4vw - 15.2px);
+  z-index: 2;
+}
+
+@-webkit-keyframes jump {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes jump {
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+.body {
+  margin-top: 20vh;
+}
+
+.body p {
+  width: calc(108px + 50vw);
+}
+
+.body h1, .body p {
+  margin-left: 16vw;
+}
+
+.body p {
+  font-size: calc(18px + 1vw);
+}
+
+@media screen and (max-width: 1000px) {
+  .body {
+    width: 80vw;
+  }
+  .body h1, .body p {
+    margin-left: 5vw;
+  }
+  .grid {
+    padding: 100px 4vw 100px 5vw;
+  }
+  #center-image {
+    -webkit-animation: persp 0.1s linear;
+            animation: persp 0.1s linear;
+  }
+  .Hero-image {
+    -webkit-animation: fade 0.1s infinite;
+            animation: fade 0.1s infinite;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,194 @@
+@import "color"
+body
+    background-color: #181818
+    color: #ffffff
+    font-size: 2rem
+    overflow-x: hidden
+    font-family: GT Walsheim Pro
+h1
+    font-size: calc(10.8px + 5vw)
+    margin: 0
+    font-weight: 700
+header
+    background-color: #181818
+    position: fixed
+    width: 100%
+    display: flex
+    font-size: .9rem
+    justify-content: center
+    align-items: center
+    top: 0
+    z-index: 999
+    div
+        margin-top: 1rem
+        display: flex
+        margin: 1.3rem 0
+        .logo
+            color: #fff
+            font-size: 1rem
+        a
+            text-decoration: none
+            padding: 0 20px
+            color: #9d9d9d
+            font-weight: 500
+        i
+            color: #ffffff
+        a:hover
+            color: white
+        #signin
+            color: #0099ff
+        #signin:hover
+            color: #0066dd
+        #signup
+            margin-left: 15px
+            color: white
+            padding: 10px 20px
+            background-color: #0099ff
+            border-radius: 20px
+.intro
+    font-size: 1.6rem
+    text-align: center
+    width: 60%
+    margin: 20vh auto 10vh auto
+    top: 3rem
+    p
+        color: #bbbbbb
+        margin: 0 0 4vh 0
+    a
+        text-decoration: none
+        color: white
+        padding: 15px 20px
+        font-size: 1.5vw
+        background-color: #0099ff
+        border-radius: 25px
+    i
+        margin-left: 10px
+    a:hover
+        background-color: #00aaff
+.Hero__image
+    width: 98.8vw
+    height: 47vw
+    z-index: -1
+    background: url(../Media/backdrop-app.png)
+    background-size: cover
+    transform: perspective(2rem) rotateX(2deg) translateY(-4rem)
+    display: flex
+    justify-content: center
+    padding-top: 40px
+    animation: fade 0.2s infinite
+    animation-play-state: paused
+    animation-delay: calc(var(--scroll) * -1s)
+    #center-image
+        width: 40vw
+        height: 20vw
+        border-radius: 30px
+        transform: perspective(2rem) translateZ(-1rem) translateY(calc(8rem + 4vw))
+        animation: persp 0.3s linear
+        animation-play-state: paused
+        animation-delay: calc(var(--scroll) * -1s)
+        z-index: -1
+@keyframes persp
+    20%
+        width: 80vw
+        height: 44vw
+        transform: perspective(2rem) rotateX(-1.8deg)
+    100%
+        width: 80vw
+        height: 44vw
+        transform: perspective(2rem) rotateX(-1.8deg)
+@keyframes fade
+    to
+        background: none
+.functions
+    margin-top: 20vh
+    h1
+        width: calc(9px + 50vw)
+.grid
+    display: grid
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) )
+    gap: 3rem
+    padding: 100px 4vw 100px 16vw
+    .grid__element
+        display: flex
+        align-items: center
+        p
+            margin: 0
+            font-size: calc(18px + 1vw)
+        i
+            border-radius: 15px
+            background: rgb(43,43,43)
+            background: linear-gradient(135deg, rgba(43,43,43,1) 0%, rgba(35,35,35,1) 100%)
+            width: 70px
+            padding: 22px 0
+            text-align: center
+            margin: 0 2vw 0 0
+.interactive
+    margin-top: 150px
+    h1
+        width: calc(39px + 60vw)
+    a
+        text-decoration: none
+.motion
+    margin-top: 150px
+    h1
+        width: calc(39px + 40vw)
+.insert
+    margin-top: 150px
+    h1
+        width: calc(80px + 60vw)
+    p
+        width: 70%
+    .green
+        align-content: center
+    button
+        font-size: 6vw
+        padding: 1vw 3vw
+        border-radius: 4vw
+        font-family: GT Walsheim Pro
+        background-color: #00c583
+        color: #fff
+        box-shadow: 0 0 10rem black
+        border: none
+        cursor: pointer
+        transition: .2s linear
+        font-weight: 700
+    button:hover
+        transform: scale(1.05)
+    button:active ~ #pressed
+        animation: jump .3s linear
+    button:active
+        transform: none
+    #pressed
+        display: inline-block
+    a
+        text-decoration: none
+    #mark
+        font-size: 5vw
+        display: none
+        float: right
+        font-size: calc(18px + 1vw)
+        position: relative
+        top: calc(4vw - 15.2px)
+        z-index: 2
+@keyframes jump
+    50%
+        transform: scale(0.9)
+.body
+    margin-top: 20vh
+    p
+        width: calc(108px + 50vw)
+    h1,p
+        margin-left: 16vw
+    p
+        font-size: calc(18px + 1vw)
+@media screen and ( max-width: 1000px )
+    .body
+        width: 80vw
+        h1,p
+            margin-left: 5vw
+    .grid
+        padding: 100px 4vw 100px 5vw
+    #center-image
+        animation: persp 0.1s linear
+    .Hero-image
+        animation: fade 0.1s infinite
