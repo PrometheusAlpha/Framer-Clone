@@ -138,7 +138,7 @@ header div #signup {
   width: 98.8vw;
   height: 47vw;
   z-index: -1;
-  background: url(../Media/backdrop-app.png);
+  background: url("../Framer-Clone/Media/iphone_12_ionu.jpg");
   background-size: cover;
   -webkit-transform: perspective(2rem) rotateX(2deg) translateY(-4rem);
           transform: perspective(2rem) rotateX(2deg) translateY(-4rem);
